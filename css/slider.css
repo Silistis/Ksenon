@@ -1,0 +1,127 @@
+
+.slider-container {
+    position: relative;
+    width: 850px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.slide {
+    flex: 0 0 calc(100% / 3);
+    text-align: center;
+    width: calc(100% / 3);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slider-container:hover .slider-button {
+    opacity: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slide .slide-actions {
+    text-align: center;
+    padding: 10px;
+    opacity: 0; /* Скрываем кнопки действий по умолчанию */
+    transition: opacity 0.3s ease; /* Добавляем плавный переход */
+}
+
+.slide:hover .slide-actions {
+    opacity: 1; /* Показываем кнопки действий при наведении на слайд */
+}
+
+.slide .slide-actions button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+.cart-button {
+    background-image: url('../media/icons/cart.svg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+}
+.cart-button:hover {
+    background-image: url('../media/icons/cart2.svg');
+}
+.wishlist-button {
+    background-image: url('../media/icons/favorite.svg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+}
+.wishlist-button:hover {
+    background-image: url('../media/icons/favorite2.svg');
+}
+.view-button {
+    background-image: url('../media/icons/eye.svg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+}
+.view-button:hover {
+    background-image: url('../media/icons/eye2.svg');
+}
+
+.product-details {
+    padding: 10px;
+    font-family: var(--font-name);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.product-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.product-details p {
+    margin: 3px 0;
+    color: var(--text-color2);
+}
+
+.product-details .price {
+    font-weight: bold;
+    font-size: 25pt;
+    color: var(--text-color);
+}

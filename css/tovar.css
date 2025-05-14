@@ -1,0 +1,105 @@
+.layer-tovar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.column {
+  justify-content: space-evenly;
+}
+.last {
+  border-top: none;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.last span {
+  margin-bottom: 50px;
+}
+.slider-container-universal {
+  max-width: 800px;
+}
+.layer {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.layer input {
+  font-size: 14pt;
+  height: 50px;
+  border-radius: 5px;
+}
+.englishOrSpanish {
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: var(--border-color);
+}
+.deliveryMethod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  font-size: 14pt;
+  font-family: var(--font-name);
+  color: var(--text-color);
+}
+.cost {
+    font-family: var(--font-name);
+    font-size: 20pt;
+    color: var(--text-color);
+    font-weight: 900;
+}
+select {
+    margin-top: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Учитываем padding и border в ширине */
+  width: 100%; /* Задаем ширину */
+  margin-bottom: 10px; /* Добавляем отступ снизу */
+  font-family: sans-serif; /* Используем приятный шрифт */
+  background-color: #fff; /* Белый фон */
+  color: #333; /* Темно-серый текст */
+}
+
+/* Стили при наведении курсора */
+select:hover {
+  border-color: #666;
+}
+
+/* Стили при фокусе (когда список выбран) */
+select:focus {
+  border-color: var(--color-2); /* Синий цвет при фокусе */
+  outline: none; /* Убираем стандартную обводку */
+  box-shadow: 0 0 5px var(--color-2) /* Добавляем тень */
+}
+.descpBox {
+    text-align: justify;
+    margin-top: 30px;
+    font-family: var(--text-color);
+    font-family: var(--font-name);
+    font-size: 14pt;
+}
+.commentaryBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comment {
+  margin-top: 15px;
+    width: 60%;
+    border: 1px solid var(--color-2);
+    border-radius: 5px;
+    display: flex;
+    height: auto;
+    padding: 15px;
+    font-family: var(--font-name);
+    flex-direction: row;
+}
+.infoBoxText {
+    text-align: justify;
+}
+.comment img {
+    height: 70px;
+    margin-right: 15px;
+    border-radius: 50px;
+}

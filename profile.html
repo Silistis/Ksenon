@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/entEx.css" />
+    <link rel="stylesheet" href="css/profileStyleLibrary.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Ксенон+</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerInteractive" id="header">
+        <div class="logo"></div>
+        <div class="hMenus">
+          <div class="headMenu">
+            <form action="" class="searchForm searchVisible" method="POST">
+              <div class="searchDiv">
+                <input
+                  type="text"
+                  name="userSearch"
+                  class="userSearch"
+                  placeholder="Поиск здесь..."
+                />
+                <input type="submit" value="поиск" class="searchBTN" />
+                <div class="searchBTN hideBTN">Х</div>
+              </div>
+            </form>
+            <a href="" class="headeMenuBtn">ПРИНТЕРЫ</a>
+            <a href="" class="headeMenuBtn">КРЕСЛА</a>
+            <a href="" class="headeMenuBtn">КАНЦЕЛЯРИЯ</a>
+            <div class="headMenuSearchBtn"></div>
+          </div>
+          <div class="userMenu">
+            <div class="hUser"></div>
+            <div class="hFavorite"></div>
+            <div class="hCart"></div>
+
+            <span class="menuItemsBox" id="hCart">
+              <span class="menuItemsArea">
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р<br />Количество: 1</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р<br />Количество: 1</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р<br />Количество: 1</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+              </span>
+
+              <div class="menuItemsMenus">
+                <span>Итого: 400 рублей</span>
+                <button class="menusCartBtn">Корзина</button>
+                <button class="menusSubmitBtn">Оформить</button>
+              </div>
+            </span>
+
+            <span class="menuItemsBox" id="hFavorite">
+              <span class="menuItemsArea">
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+              </span>
+
+              <div class="menuItemsMenus">
+                <button class="menusCartBtn">Подробнее</button>
+              </div>
+            </span>
+
+            <span class="menuItemsBox menuItemsBoxUser" id="hUser">
+              <div class="menuItemsMenus">
+                <span
+                  style="background-image: url('media/user.jpg')"
+                  class="menusUserImg"
+                ></span>
+                <span>Рыжов Кирилл</span>
+              </div>
+
+              <span class="menuItemsArea">
+                <span class="menuItemUser">
+                  <span class="menuItimesText">
+                    <a href="">Пригласить друзей</a>
+                  </span>
+                </span>
+                <span class="menuItemUser">
+                  <span class="menuItimesText">
+                    <a href="">Об акаунте</a>
+                  </span>
+                </span>
+                <span class="menuItemUser">
+                  <span class="menuItimesText">
+                    <a href="">Выйти</a>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="headerInfo">
+        <div class="headerInfoBox">
+          <div class="icon dolar"></div>
+          <div class="infoBoxText">
+            100% Возврат средств
+            <span>Гарантия</span>
+          </div>
+        </div>
+        <div class="headerInfoBox">
+          <div class="icon car"></div>
+          <div class="infoBoxText">
+            Бесплатная доставка
+            <span>Под заказ от 100 т.руб</span>
+          </div>
+        </div>
+        <div class="headerInfoBox">
+          <div class="icon phone"></div>
+          <div class="infoBoxText">
+            24-часа
+            <span>Активная поддержка</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="layer">
+        <div class="userInteractiveBar">
+          <img src="/media/user.jpg" alt="Дьячков Кирилл Романович" />
+          <span class="userInteractiveName">Рыжов Максим Романович</span>
+          <input
+            type="submit"
+            value="Изменить данные"
+            class="clasicSubmitBTN profileBTN"
+          />
+          <input
+            type="submit"
+            value="Очистить историю просмотра"
+            class="clasicSubmitBTN profileBTN"
+          />
+          <input
+            type="submit"
+            value="Очистить корзину"
+            class="clasicSubmitBTN profileBTN"
+          />
+        </div>
+
+        <div class="profileSliderBox">
+          <div class="slider-container-universal">
+            <div class="slider-universal">
+              <img src="/media/1.png" alt="Изображение 1" />
+              <img src="/media/2.png" alt="Изображение 2" />
+              <img src="/media/12.jpg" alt="Изображение 3" />
+              <img src="/media/13.jpg" alt="Изображение 4" />
+              <img src="/media/11.jpg" alt="Изображение 5" />
+              <img src="/media/1.png" alt="Изображение 1" />
+              <img src="/media/2.png" alt="Изображение 2" />
+              <img src="/media/12.jpg" alt="Изображение 3" />
+              <img src="/media/13.jpg" alt="Изображение 4" />
+              <img src="/media/11.jpg" alt="Изображение 5" />
+              <img src="/media/1.png" alt="Изображение 1" />
+              <img src="/media/2.png" alt="Изображение 2" />
+              <img src="/media/12.jpg" alt="Изображение 3" />
+              <img src="/media/13.jpg" alt="Изображение 4" />
+              <img src="/media/11.jpg" alt="Изображение 5" />
+            </div>
+
+            <button class="prev-button">❮</button>
+            <button class="next-button">❯</button>
+          </div>
+
+          <div class="animation-container"></div>
+
+          <div class="thumbnail-slider-container">
+            <div class="thumbnail-slider"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer">
+        <div class="marketBox last">
+          <span>Корзина</span>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 1" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 2" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 3" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 4" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 5" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 6" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+            </div>
+            <button class="slider-button prev">&lt;</button>
+            <button class="slider-button next">&gt;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer">
+        <div class="marketBox last">
+          <span>Отслеживаемые товары</span>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 1" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 2" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 3" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 4" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 5" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="/media/1.png" alt="Принтер 6" />
+                <div class="product-details">
+                  <h3>Принтер лазерный G&G</h3>
+                  <p>Принтеры</p>
+                  <p class="price">10 000₽</p>
+                </div>
+                <div class="slide-actions">
+                  <button class="cart-button">
+                    <i class="fa fa-shopping-cart"></i>
+                  </button>
+                  <button class="wishlist-button">
+                    <i class="fa fa-star"></i>
+                  </button>
+                  <button class="view-button"><i class="fa fa-eye"></i></button>
+                </div>
+              </div>
+            </div>
+            <button class="slider-button prev">&lt;</button>
+            <button class="slider-button next">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="#header" class="undo">
+        <div>Наверх</div>
+      </a>
+      <span>О Нас</span>
+      <div>
+        Магазин "Ксенон" в Канске — это надежное место для покупки качественной
+        оргтехники и запчастей к ней. Мы предлагаем широкий ассортимент товаров,
+        включая принтеры, сканеры и другие устройства, чтобы удовлетворить
+        потребности как частных клиентов, так и предприятий. Если вы не можете
+        посетить нас в магазине, не переживайте! Вы всегда можете ознакомиться с
+        нашим ассортиментом и сделать заказ через наш интернет-магазин.
+      </div>
+      <span>Нужна помощь?</span>
+      <div>
+        Телефон 1: 8 (496) 989—20—11<br /><br />
+
+        Адрес: Магистральная улица, 30, г.Канск<br /><br />
+
+        Часы работы: 09:00-21:00<br /><br />
+
+        Почта: ksnon@gmail.com<br /><br />
+      </div>
+    </footer>
+
+    <script src="/js/slider.js"></script>
+    <script src="/js/imgSlider.js"></script>
+    <script src="/js/formPost.js"></script>
+  </body>
+</html>

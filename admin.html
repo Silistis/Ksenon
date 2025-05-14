@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/entEx.css" />
+    <link rel="stylesheet" href="css/profileStyleLibrary.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/tovar.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Ксенон+</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerInteractive" id="header">
+        <div class="logo"></div>
+        <div class="hMenus">
+          <div class="headMenu">
+            <form action="" class="searchForm searchVisible" method="POST">
+              <div class="searchDiv">
+                <input
+                  type="text"
+                  name="userSearch"
+                  class="userSearch"
+                  placeholder="Поиск здесь..."
+                />
+                <input type="submit" value="поиск" class="searchBTN" />
+                <div class="searchBTN hideBTN">Х</div>
+              </div>
+            </form>
+            <a href="" class="headeMenuBtn">ПРИНТЕРЫ</a>
+            <a href="" class="headeMenuBtn">КРЕСЛА</a>
+            <a href="" class="headeMenuBtn">КАНЦЕЛЯРИЯ</a>
+            <div class="headMenuSearchBtn"></div>
+          </div>
+          <div class="userMenu">
+            <div class="hUser"></div>
+            <div class="hFavorite"></div>
+            <div class="hCart"></div>
+
+            <span class="menuItemsBox" id="hCart">
+              <span class="menuItemsArea">
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р<br />Количество: 1</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р<br />Количество: 1</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р<br />Количество: 1</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+              </span>
+
+              <div class="menuItemsMenus">
+                <span>Итого: 400 рублей</span>
+                <button class="menusCartBtn">Корзина</button>
+                <button class="menusSubmitBtn">Оформить</button>
+              </div>
+            </span>
+
+            <span class="menuItemsBox" id="hFavorite">
+              <span class="menuItemsArea">
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+
+                <span class="menuItem">
+                  <img src="/media/cart.jpg" alt="" />
+                  <span class="menuItimesText">
+                    <a href="">Название</a>
+                    <span>Цена: 1200р</span>
+                  </span>
+                  <span class="menuItemsDelete">Х</span>
+                </span>
+              </span>
+
+              <div class="menuItemsMenus">
+                <button class="menusCartBtn">Подробнее</button>
+              </div>
+            </span>
+
+            <span class="menuItemsBox menuItemsBoxUser" id="hUser">
+              <div class="menuItemsMenus">
+                <span
+                  style="background-image: url('media/user.jpg')"
+                  class="menusUserImg"
+                ></span>
+                <span>Рыжов Кирилл</span>
+              </div>
+
+              <span class="menuItemsArea">
+                <span class="menuItemUser">
+                  <span class="menuItimesText">
+                    <a href="">Пригласить друзей</a>
+                  </span>
+                </span>
+                <span class="menuItemUser">
+                  <span class="menuItimesText">
+                    <a href="">Об акаунте</a>
+                  </span>
+                </span>
+                <span class="menuItemUser">
+                  <span class="menuItimesText">
+                    <a href="">Выйти</a>
+                  </span>
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="headerInfo">
+        <div class="headerInfoBox">
+          <div class="icon dolar"></div>
+          <div class="infoBoxText">
+            100% Возврат средств
+            <span>Гарантия</span>
+          </div>
+        </div>
+        <div class="headerInfoBox">
+          <div class="icon car"></div>
+          <div class="infoBoxText">
+            Бесплатная доставка
+            <span>Под заказ от 100 т.руб</span>
+          </div>
+        </div>
+        <div class="headerInfoBox">
+          <div class="icon phone"></div>
+          <div class="infoBoxText">
+            24-часа
+            <span>Активная поддержка</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="layer-tovar">
+        <div class="last first">
+          <span>Админ панель</span>
+        </div>
+      </div>
+
+      <form action="" method="POST" class="adminForm">
+        <div class="adminFormTovarEdit bord">
+          <div class="editColumn">
+            <span>Добавить название товара</span>
+            <input type="text" name="title" class="classicInput" required />
+          </div>
+          <div class="editColumn">
+            <span>Добавить описание товара</span>
+            <textarea
+              type="text"
+              name="description"
+              class="classicInput"
+              required
+            ></textarea>
+            <input type="submit" value="Запомнить!" class="clasicSubmitBTN" />
+          </div>
+        </div>
+        <div class="last first">
+          <span>Добавить картинки</span>
+        </div>
+        <div class="adminFormTovarImg bord">
+          <div class="slider-container-universal">
+            <div class="slider-universal">
+              <img src="/media/tovar1/1007451033.jpg" alt="Изображение 1" />
+              <img src="/media/tovar1/123231231312.webp" alt="Изображение 2" />
+              <img src="/media/tovar1/1323213241.webp" alt="Изображение 3" />
+              <img src="/media/tovar1/213213.webp" alt="Изображение 4" />
+            </div>
+
+            <button class="prev-button">❮</button>
+            <button class="next-button">❯</button>
+          </div>
+
+          <div class="animation-container"></div>
+
+          <div class="thumbnail-slider-container">
+            <div class="thumbnail-slider"></div>
+          </div>
+          <input type="submit" value="Добавить еще картинок?" class="clasicSubmitBTN" />
+        </div>
+
+            <div class="adminFormTovarEdit row bord">
+          <div class="editColumn">
+            <span>Добавить категорию товара</span>
+            <input type="text" name="category1" class="classicInput" required />
+            <input type="submit" value="ДА!" class="clasicSubmitBTN" />
+          </div>
+          <div class="editColumn">
+            <span>скільки ти коштуєш?</span>
+            <input type="text" name="cost" class="classicInput" required />
+            <input type="submit" value="ок..." class="clasicSubmitBTN" />
+          </div>
+          <div class="editColumn">
+            <span>Добавить категорию товара</span>
+            <input type="text" name="category2" class="classicInput" required />
+            <input type="submit" value="ДАААА!" class="clasicSubmitBTN" />
+          </div>
+        </div>
+
+      </form>
+    </main>
+
+    <footer>
+      <a href="#header" class="undo">
+        <div>Наверх</div>
+      </a>
+      <span>О Нас</span>
+      <div>
+        Магазин "Ксенон" в Канске — это надежное место для покупки качественной
+        оргтехники и запчастей к ней. Мы предлагаем широкий ассортимент товаров,
+        включая принтеры, сканеры и другие устройства, чтобы удовлетворить
+        потребности как частных клиентов, так и предприятий. Если вы не можете
+        посетить нас в магазине, не переживайте! Вы всегда можете ознакомиться с
+        нашим ассортиментом и сделать заказ через наш интернет-магазин.
+      </div>
+      <span>Нужна помощь?</span>
+      <div>
+        Телефон 1: 8 (496) 989—20—11<br /><br />
+
+        Адрес: Магистральная улица, 30, г.Канск<br /><br />
+
+        Часы работы: 09:00-21:00<br /><br />
+
+        Почта: ksnon@gmail.com<br /><br />
+      </div>
+    </footer>
+
+    <script src="/js/slider.js"></script>
+    <script src="/js/imgSlider.js"></script>
+    <script src="/js/formPost.js"></script>
+  </body>
+</html>

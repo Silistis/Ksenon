@@ -1,0 +1,150 @@
+:root {
+  --box-bacground-color: #f5f5f5;
+}
+.profileBTN {
+  margin-top: 15px;
+  width: 250px;
+}
+.profileBTN:hover {
+    width: calc(250px + 10px);
+}
+.userInteractiveBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  padding: 15px;
+  background-color: var(--box-bacground-color);
+  width: 23%;
+  border-radius: 5px;
+  font-family: var(--font-name);
+}
+.userInteractiveBar img {
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+.userInteractiveBar span {
+  font-weight: bold;
+  font-size: 14pt;
+  color: var(--text-color);
+  margin-top: 15px;
+}
+.profileSliderBox {
+    background-color: var(--box-bacground-color);
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.layer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+
+.slider-container-universal {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider-universal {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-universal img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    opacity: 0; /* Изначально скрыты */
+    transition: opacity 0.3s ease-in-out; /* Плавное появление/исчезновение */
+}
+
+.slider-container-universal:hover .prev-button,
+.slider-container-universal:hover .next-button {
+    opacity: 1; /* Показываем при наведении на контейнер */
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.animation-container {
+    width: 40%;
+    max-width: 800px;
+    height: 50px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden; /* Это нужно, чтобы скрыть выходящие за границы элементы */
+}
+
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--text-color2);
+}
+
+.dot.active {
+    background-color: var(--color-2);
+}
+
+.thumbnail-slider-container {
+    width: 80%;
+    max-width: 800px;
+    height: 100px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.thumbnail-slider img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnail-slider img.active {
+    border-color: #e74c3c;
+}

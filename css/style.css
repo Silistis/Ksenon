@@ -1,0 +1,369 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.hMenus {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+.headerInteractive {
+    height: 80px;
+    border: var(--border-color);
+    padding-left: 390px;
+    padding-right: 390px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    background-image: url('../media/logo.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 210px;
+}
+.userMenu {
+    width: 145px;
+    border-left: var(--border-color);
+    border-right: var(--border-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.menuItemsBox {
+    z-index: 20;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 0;
+    top: 80px;
+    position: absolute;
+    box-shadow: 1px 1px 4px var(--text-color2);
+    background-color: white;
+    height: auto;
+    width: 300px;
+}
+.menuItemsArea {
+    height: 300px;
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.menuItem {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--font-name);
+    border-bottom: var(--border-color);
+}
+.menuItemsMenus {
+    height: auto;
+    border-top: var(--border-color);
+    font-family: var(--font-name);
+    padding-top: 15px;
+}
+.menuItemsMenus span {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.menuItemsMenus button {
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: 40px;
+    outline: none;
+    font-family: var(--font-name);
+    font-size: 12pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menusCartBtn {
+    background-color: white;
+    border: 1px solid var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+.menusCartBtn:hover {
+    color: white;
+    background-color: var(--text-color);
+}
+.menusSubmitBtn:hover {
+    color: white;
+    background-color: var(--color-2);
+}
+.menusSubmitBtn {
+    color: var(--color-2);
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--color-2);
+}
+.menuItem img {
+    width: 70px;
+}
+.menuItemsDelete {
+    width: 50px;
+    height: 50px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.menuItemsDelete:hover {
+    color: var(--color-2);
+}
+.menuItimesText {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color2);
+    width: 180px;
+}
+.menuItimesText span {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 10pt;
+    padding-left: 15px;
+}
+.menuItimesText a {
+    text-decoration: none;
+    font-size: 14pt;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+    padding-left: 15px;
+}
+.menuItimesText a:hover {
+    color: var(--color-2);
+}
+.userMenu div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+}
+.hUser {
+    background-image: url('../media/icons/user.svg');
+    background-size: 65%;
+}
+.hUser:hover {
+    background-image: url('../media/icons/user2.svg');
+}
+.hFavorite {
+    background-image: url('../media/icons/favorite.svg');
+    background-size: 50%;
+}
+.hFavorite:hover {
+    background-image: url('../media/icons/favorite2.svg');
+}
+.hCart {
+    background-image: url('../media/icons/cart.svg');
+    background-size: 65%;
+}
+.hCart:hover {
+    background-image: url('../media/icons/cart2.svg');
+}
+.headMenu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: auto;
+}
+.searchForm {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchVisible {
+    visibility: hidden;
+}
+.userSearch {
+    height: 25px;
+    outline: none;
+    border: none;
+    width: 300px;
+    font-family: Calibri;
+    font-size: 12pt;
+}
+.searchDiv {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--text-color);
+    margin-right: 30px;
+    height: auto;
+}
+.searchBTN {
+    height: 20px;
+    outline: none;
+    background-color: white;
+    border: none;
+}
+.searchBTN:hover  {
+    background-color:#e5e5e5;
+}
+.hideBTN {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-name);
+    width: 25px;
+}
+.headMenu a {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-name);
+    font-weight: bold;
+}
+.headMenu a:hover {
+    color: var(--color-2);
+}
+.headMenuSearchBtn {
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+    background-image: url('../media/icons/search.svg');
+    background-size: 40%;
+    margin-right: 15px;
+}
+.headMenuSearchBtn:hover {
+    background-image: url('../media/icons/search2.svg');
+}
+.headerInfo {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: var(--border-color);
+    padding-left: 390px;
+    padding-right: 390px;
+    font-family: var(--font-name);
+    color: var(--text-color);
+}
+.headerInfoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.infoBoxText {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size);
+    text-transform: uppercase;
+}
+.icon {
+    height: 60px;
+    width: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dolar {
+    background-image: url('../media/icons/dollar.svg');
+    background-size: 50%;
+}
+.car {
+    background-image: url('../media/icons/delivery.svg');
+    background-size: 55%;
+}
+.phone {
+    background-image: url('../media/icons/phone.svg');
+    background-size: 70%;
+}
+.infoBoxText span {
+    font-size: var(--font-size2);
+    font-weight: lighter;
+    color: var(--text-color2);
+}
+footer {
+    padding-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    padding-left: 390px;
+    padding-right: 390px;
+    background-color: var(--footer-color);
+    font-family: var(--font-name);
+}
+.undo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    left: 48.7%;
+    position: absolute;
+    top: -55px;
+    width: 60px;
+    height: 80px;
+    color: #9a9a9a;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../media/icons/octogoneArrow.svg');
+}
+footer span {
+    margin-top: 25px;
+    color: white;
+    font-size: 16pt;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+footer div {
+    margin-top: 25px;
+    width: 360px;
+    color: rgb(169, 169, 169);
+}
+main {
+    padding: 50px;
+    padding-left: 390px;
+    padding-right: 390px;
+}
+.menusUserImg {
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    background-size: contain;
+    font-family: var(--font-name);
+    font-weight: bold;
+}
+.menuItemUser {
+    margin-top: 10px;
+    border: none;
+    font-family: var(--font-name);
+}
+.menuItemUser .menuItimesText a {
+    font-weight: lighter;
+    color: var(--text-color2);
+}
+.menuItemUser .menuItimesText a:hover {
+    color: var(--color-2);
+}
+.menuItemsBoxUser {
+    width: 200px;
+    height: 270px;
+}

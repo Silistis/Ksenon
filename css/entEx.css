@@ -1,0 +1,52 @@
+:root {
+    --btn-width: 332px;
+}
+.classicKsenonForm a {
+    height: auto;
+    width: auto;
+}
+.classicKsenonForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.classicKsenonForLogo {
+    height: 80px;
+    width: 200px;
+    background-image: url('../media/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.classicKsenonForm .classicInput {
+    height: 10px;
+    outline: none;
+    border: 1px solid var(--text-color);
+    padding: 15px;
+    width: 300px;
+    margin-top: 30px;
+}
+.clasicSubmitBTN {
+    height: 40px;
+    width: 332px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--color-2);
+    margin-top: 45px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.clasicSubmitBTN:hover {
+    width: calc(var(--btn-width) + 15px);
+    background-color: #ffc13c;
+}
+.clasicTips {
+    margin-top: 10px;
+    color: var(--color-2);
+}
